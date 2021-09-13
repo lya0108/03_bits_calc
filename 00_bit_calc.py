@@ -1,3 +1,5 @@
+
+# puts series of symbols at start and end of text
 def statement_generator(text, decoration):
 
     ends = decoration * 5
