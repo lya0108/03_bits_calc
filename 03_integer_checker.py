@@ -1,22 +1,23 @@
-def num_check(question):
+def num_check(question, low):
 
 
     valid = False
     while not valid:
 
-        error1 = "please enter a number that is more than zero"
-        error2 = "please enter a number"
+        error = "please enter a number that is more than zero"
+        "(or equal to) {}".format(low)
+        
         try:
 
-            response = float(input(question))
+            response = int(input(question))
 
-            if response > 0:
+            if response > low:
                 return response 
 
             else:
-                print(error1)
+                print(error)
                 print()
 
         except ValueError:
-            print(error2)
+            print(error)
             print()
