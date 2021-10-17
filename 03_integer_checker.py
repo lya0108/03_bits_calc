@@ -23,7 +23,7 @@ def num_check(question, low):
 keep_going = ""
 while keep_going == "":
     print()
-
+    # asks user for integer, width, and height
     var_integer = num_check()
     width = num_check()
     height = num_check()
