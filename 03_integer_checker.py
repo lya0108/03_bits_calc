@@ -3,7 +3,7 @@ def num_check(question, low):
     valid = False
     while not valid:
 
-        error = "please enter a number that is more than zero""(or equal to) {}".format(low)
+        error = "please enter a integer that is more than ""(or equal to) {}".format(low)
 
         try:
 
@@ -29,4 +29,4 @@ while keep_going == "":
     # asks user for width and height of an image
     width = num_check("image width? ", 1)
     print()
-    height = num_check("image height?", 1)
+    height = num_check("image height? ", 1)
