@@ -50,7 +50,7 @@ def num_check(question, low):
     valid = False
     while not valid:
 
-        error = "please enter a number that is more than or equal to {}".format(low)
+        error = "please enter a integer that is more than (or equal to) {}".format(low)
 
         try:
 
@@ -88,3 +88,7 @@ while keep_going == "":
         width = num_check("image width? ", 1)
         print()
         height = num_check("image height?", 1)
+    
+    # for text, ask for a string
+    else:
+        var_text = input("enter some text: ")
